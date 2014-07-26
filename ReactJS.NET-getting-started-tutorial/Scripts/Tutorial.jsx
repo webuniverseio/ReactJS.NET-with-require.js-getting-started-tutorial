@@ -69,6 +69,10 @@ var CommentBox = React.createClass({
 		xhr.send();	
 	},
 	handleCommentSubmit: function(comment) {
+	    var comments = this.state.data;
+	    var newComments = comments.concat([comment]);
+	    this.setState({data: newComments});
+
 		var data = new FormData();
 		data.append('Author', comment.author);
 		data.append('Text', comment.text);
