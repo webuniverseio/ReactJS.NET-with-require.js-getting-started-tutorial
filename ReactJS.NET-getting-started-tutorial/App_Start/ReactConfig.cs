@@ -1,8 +1,8 @@
 using React;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(ReactJS.NET_getting_started_tutorial.ReactConfig), "Configure")]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(ReactDemo.ReactConfig), "Configure")]
 
-namespace ReactJS.NET_getting_started_tutorial
+namespace ReactDemo
 {
 	public static class ReactConfig
 	{
