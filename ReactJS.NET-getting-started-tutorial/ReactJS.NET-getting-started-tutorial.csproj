@@ -111,6 +111,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Scripts\showdown.js" />
+    <Content Include="Scripts\showdown.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
