@@ -30,6 +30,13 @@ namespace ReactDemo.Controllers
             };
         }
 
+        [HttpPost]
+        public ActionResult AddComment(CommentModel comment)
+        {
+            _comments.Add(comment);
+            return Content("Success :)");
+        }
+
         public ActionResult Comments()
         {
             return Json(_comments, JsonRequestBehavior.AllowGet);

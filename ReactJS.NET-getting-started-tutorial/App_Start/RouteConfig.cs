@@ -13,7 +13,13 @@ namespace ReactDemo
                 name: "Comments",
                 url: "comments",
                 defaults: new { controller = "Home", action = "Comments" }
-                );
+            );
+
+            routes.MapRoute(
+                name: "NewComment",
+                url: "comments/new",
+                defaults: new { controller = "Home", action = "AddComment" }
+            );
 
             routes.MapRoute(
                 name: "Default",
