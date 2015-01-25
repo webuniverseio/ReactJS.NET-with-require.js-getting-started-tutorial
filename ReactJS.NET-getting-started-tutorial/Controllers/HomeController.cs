@@ -44,7 +44,7 @@ namespace ReactDemo.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View(_comments);
         }
 
     }

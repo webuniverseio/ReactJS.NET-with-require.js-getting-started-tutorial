@@ -20,9 +20,9 @@ namespace ReactDemo
 			// add all the necessary JavaScript files here. This includes 
 			// your components as well as all of their dependencies.
 			// See http://reactjs.net/ for more information. Example:
-			//ReactSiteConfiguration.Configuration
-			//	.AddScript("~/Scripts/First.jsx")
-			//	.AddScript("~/Scripts/Second.jsx");
+			ReactSiteConfiguration.Configuration
+				.AddScript("~/Scripts/Tutorial.jsx")
+				.AddScript("~/Scripts/showdown.js");
 		}
 	}
 }
