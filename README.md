@@ -1,6 +1,7 @@
 # ReactJS.NET-with-require.js-getting-started-tutorial
 
-This repo contains example of isomorphic react rendering on both client and server side with a help of require.js.
+This repo contains example of isomorphic react rendering on both client and server side with a help of require.js.    
+P.s. it also contains a bonus example with loose dependency step, take a look at the main.js to get the idea.
 
 ## Installation
 - If you don't have bower installed run `npm i -g bower`

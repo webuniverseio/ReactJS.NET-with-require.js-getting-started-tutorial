@@ -38,7 +38,8 @@ module.exports = function (grunt) {
 						CommentBox: 'CommentBox'
 					},
 					modules: [{
-						name: 'main'
+						name: 'main',
+						include: ['jsx!CommentBox']
 					}],
 					stubModules: ['jsx', 'text', 'JSXTransformer'],
 					jsx: {
