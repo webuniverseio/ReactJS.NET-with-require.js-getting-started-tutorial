@@ -18,8 +18,28 @@
         submitUrl = Url.Action("AddComment"),
         pollInterval = 2000,
     })
-    <script src="http://fb.me/react-0.12.2.js"></script>
-    @Scripts.Render("~/bundles/main")
-    @Html.ReactInitJavaScript()
+    <script src="/bower_components/requirejs/require.js"></script>
+    <script>
+        require.config({
+            baseUrl: '/Scripts/', //or /BuildAssets/
+            paths: {
+                react: '../bower_components/react/react-with-addons',
+                JSXTransformer: '../bower_components/react/JSXTransformer',
+                jsx: '../bower_components/jsx-requirejs-plugin/js/jsx',
+                text: '../bower_components/requirejs-text/text',
+                main: 'main',
+                Comment: 'Comment',
+                CommentList: 'CommentList',
+                CommentForm: 'CommentForm',
+                CommentBox: 'CommentBox',
+	            showdown: 'showdown'
+            },
+            jsx: {
+                fileExtension: '.jsx'
+            }
+        });
+
+        require(['main']);
+    </script>
 </body>
 </html>

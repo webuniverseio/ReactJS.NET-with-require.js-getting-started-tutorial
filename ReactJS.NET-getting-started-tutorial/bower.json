@@ -1,0 +1,20 @@
+{
+  "name": "Scripts",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rickbeerendonk/ReactJS.NET-getting-started-tutorial",
+  "authors": [
+    "Sergey Zarouski <szarouski@indigo.ca>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.17",
+    "jsx-requirejs-plugin": "~0.6.0"
+  }
+}

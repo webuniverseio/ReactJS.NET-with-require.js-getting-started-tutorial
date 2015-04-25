@@ -21,7 +21,10 @@ namespace ReactDemo
 			// your components as well as all of their dependencies.
 			// See http://reactjs.net/ for more information. Example:
 			ReactSiteConfiguration.Configuration
-				.AddScript("~/Scripts/Tutorial.jsx")
+                .AddScript("~/Scripts/Comment.jsx")
+                .AddScript("~/Scripts/CommentList.jsx")
+                .AddScript("~/Scripts/CommentForm.jsx")
+				.AddScript("~/Scripts/CommentBox.jsx")
 				.AddScript("~/Scripts/showdown.js");
 		}
 	}
